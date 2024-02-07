@@ -567,3 +567,123 @@ img {
 .icon-link-footer:focus {
   background-color: #31d0aa;
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(76, 76, 76, 0.594);
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  width: 408px;
+  min-height: 584px;
+  background-color: #fafafa;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 24px;
+}
+
+.modal-close {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  background-color: E7E9FC;
+  border: 1px solid #4c4c4c;
+  border-radius: 50%;
+  /* top: 24px;
+  right: 24px; */
+}
+
+.modal-title {
+  text-align: center;
+  max-width: 360px;
+  margin-bottom: 40px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.modal-field {
+  margin-bottom: 18px;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-input {
+  width: 100%;
+  height: 58px;
+  border: 1px solid rgba(17, 17, 17, 0.25);
+  border-radius: 13px;
+  outline: transparent;
+  padding-left: 62px;
+  font-size: 16px;
+  color: green;
+  transition-duration: 300ms;
+}
+
+.modal-input:focus {
+  border-color: #fd9222;
+}
+
+.modal-input:focus + .modal-icon {
+  stroke: #fd9222;
+}
+
+.modal-input::placeholder {
+  font-size: 14px;
+  color: rgb(128, 73, 0);
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+}
+
+.modal-icon {
+  fill: transparent;
+  stroke: #404040;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition-duration: 300ms;
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 137px;
+  border: 1px solid rgba(17, 17, 17, 0.25);
+  border-radius: 13px;
+  outline: transparent;
+  padding: 22px 24px;
+  font-size: 16px;
+  color: green;
+  transition-duration: 300ms;
+  resize: none;
+}
