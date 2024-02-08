@@ -639,16 +639,17 @@ img {
   outline: transparent;
   padding-left: 62px;
   font-size: 16px;
-  color: green;
+  color: rgba(46, 47, 66, 1);
   transition-duration: 300ms;
 }
 
 .modal-input:focus {
-  border-color: #fd9222;
+  border-color: rgba(77, 90, 229, 1);
 }
 
 .modal-input:focus + .modal-icon {
-  stroke: #fd9222;
+  fill: rgba(77, 90, 229, 1);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .modal-input::placeholder {
@@ -666,8 +667,7 @@ img {
 }
 
 .modal-icon {
-  fill: transparent;
-  stroke: #404040;
+  fill: --navy-blue;
   position: absolute;
   left: 16px;
   top: 50%;
@@ -683,7 +683,11 @@ img {
   outline: transparent;
   padding: 22px 24px;
   font-size: 16px;
-  color: green;
+  color: rgba(46, 47, 66, 1);
   transition-duration: 300ms;
   resize: none;
+}
+
+.modal-textarea:focus {
+  border-color: rgba(77, 90, 229, 1);
 }
