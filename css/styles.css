@@ -601,19 +601,30 @@ img {
 }
 
 .modal-close {
+  position: absolute;
   width: 24px;
   height: 24px;
   text-align: center;
   background-color: E7E9FC;
   border: 1px solid #4c4c4c;
   border-radius: 50%;
-  /* top: 24px;
-  right: 24px; */
+  top: 24px;
+  right: 24px;
+}
+
+.modal-icon-close {
+  fill: --navy-blue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 300ms;
 }
 
 .modal-title {
   text-align: center;
   max-width: 360px;
+  margin-top: 40px;
   margin-bottom: 40px;
   font-family: var(--font-family);
   font-weight: 500;
