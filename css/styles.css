@@ -773,7 +773,7 @@ img {
 }
 
 .modal-icon {
-  fill: --navy-blue;
+  fill: rgba(46, 47, 66, 1);
   position: absolute;
   left: 16px;
   top: 50%;
