@@ -743,6 +743,8 @@ img {
   align-items: flex-start;
   cursor: pointer;
   min-width: 169px;
+  height: 56px;
+  border: none;
   gap: 10px;
   color: #fff;
   text-align: center;
@@ -777,6 +779,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   text-decoration-line: underline;
+  margin-left: 4px;
 }
 
 .check-text-span {
